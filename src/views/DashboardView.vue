@@ -4,11 +4,9 @@ import BandwithAnomalyChart from '@/components/dashboard/BandwithAnomalyChart.vu
 import Feed from '@/components/dashboard/Feed.vue'
 import OverviewCard from '@/components/dashboard/OverviewCard.vue'
 import { useTelemetryStore } from '@/stores/telemetry'
-import { storeToRefs } from 'pinia'
 import SeverityDistributionChart from '@/components/dashboard/SeverityDistributionChart.vue'
 
 const store = useTelemetryStore()
-const { feed } = storeToRefs(store)
 </script>
 
 <template>

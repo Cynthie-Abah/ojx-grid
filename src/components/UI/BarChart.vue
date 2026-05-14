@@ -5,6 +5,8 @@ import {
   CategoryScale,
   LinearScale,
   PointElement,
+  BarController,
+  BarElement,
   LineElement,
   Tooltip,
   Filler,
@@ -20,7 +22,8 @@ const props = defineProps<Props>()
 
 ChartJS.register(
   CategoryScale,
-
+  BarController,
+  BarElement,
   LinearScale,
 
   PointElement,
