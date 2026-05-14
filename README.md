@@ -1,48 +1,131 @@
-# ojx-grid
+# OJX GRID
 
-This template should help get you started developing with Vue 3 in Vite.
+A high-performance real-time cybersecurity analytics dashboard built with Vue, TypeScript, Pinia, Supabase Realtime, and Chart.js.
 
-## Recommended IDE Setup
+OJX GRID simulates a production-grade telemetry intelligence platform capable of visualizing live attack activity, anomaly spikes, network volatility, and streaming system metrics in real time.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Inspired by:
 
-## Recommended Browser Setup
+- cybersecurity command centers
+- SIEM dashboards
+- trading terminals
+- telemetry monitoring systems
+- neural intelligence interfaces
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+---
 
-## Type Support for `.vue` Imports in TS
+## Preview
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+OJX GRID delivers:
 
-## Customize configuration
+- live telemetry streaming
+- animated realtime charts
+- candlestick analytics
+- live threat feed
+- realtime metric cards
+- chart-type switching
+- pause/resume streaming
+- responsive dashboard layouts
+- scalable realtime architecture
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+# Tech Stack
 
-```sh
-npm install
-```
+## Frontend
 
-### Compile and Hot-Reload for Development
+- Vue 3
+- TypeScript
+- Pinia
+- TailwindCSS
+- Chart.js
+- vue-chartjs
+- TanStack Virtual
 
-```sh
-npm run dev
-```
+## Backend / Realtime
 
-### Type-Check, Compile and Minify for Production
+- Supabase Broadcast Channels
+- PostgreSQL
 
-```sh
-npm run build
-```
+---
 
-### Lint with [ESLint](https://eslint.org/)
+# Core Features
 
-```sh
-npm run lint
+## Real-Time Streaming
+
+OJX GRID uses Supabase Realtime Broadcast Channels to simulate live telemetry streams.
+
+The simulator generates:
+
+- network traffic
+- CPU usage
+- memory utilization
+- anomaly spikes
+- threat severity
+- request volatility
+
+Streaming updates occur every 2 seconds.
+
+---
+
+## Advanced Visualization System
+
+### Attack Frequency Chart
+
+- smooth animated area chart
+- glowing telemetry gradients
+- realtime updates
+- responsive scaling
+
+### Severity Distribution
+
+- animated doughnut chart
+- realtime threat breakdown
+- live dataset updates
+
+### Live Metric Cards
+
+- active threats
+- blocked requests
+- network load
+- telemetry status
+
+---
+
+# Realtime Activity Feed
+
+The dashboard includes a live telemetry stream featuring:
+
+- severity indicators
+- live node activity
+- realtime anomaly detection
+- streaming threat logs
+- animated feed updates
+
+The feed is virtualized using TanStack Virtual to efficiently handle growing datasets without degrading rendering performance.
+
+---
+
+# State Management Strategy
+
+OJX GRID uses Pinia as the centralized state management layer.
+
+The store is responsible for:
+
+- realtime telemetry ingestion
+- feed updates
+- stream buffering
+- derived analytics
+- connection state
+- chart synchronization
+
+### Store Architecture
+
+```ts
+latest
+series
+feed
+buffer
+isConnected
+paused
 ```
