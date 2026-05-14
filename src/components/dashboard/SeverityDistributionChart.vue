@@ -111,7 +111,7 @@ const chartOptions = computed(
     />
 
     <div
-      class="w-full my-2 flex justify-between items-center gap-2 rounded-full border border-white/10 bg-black/40 p-1 backdrop-blur-xl"
+      class="w-full my-2 flex justify-between items-center gap-2 rounded-full border border-slate-200 bg-white/70 dark:border-white/10 dark:bg-black/40 p-1 backdrop-blur-xl"
     >
       <button
         @click="chartType = 'pie'"
