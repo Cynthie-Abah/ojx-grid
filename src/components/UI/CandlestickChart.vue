@@ -36,13 +36,15 @@ const props = defineProps<Props>()
 </script>
 
 <template>
-  <div class="relative h-80 overflow-hidden rounded-[28px] border border-cyan-500/10 bg-black/20">
+  <div
+    class="relative h-80 overflow-hidden rounded-[28px] border border-[rgba(15,23,42,0.08)] dark:border-cyan-500/10 bg-[rgba(255,255,255,0.7)] dark:bg-black/20"
+  >
     <div
       class="absolute inset-0 opacity-30"
       style="
         background:
-          linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-          linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+          linear-gradient(to right, var(--chart-grid) 1px, transparent 1px),
+          linear-gradient(to bottom, var(--chart-grid) 1px, transparent 1px);
 
         background-size: 40px 40px;
       "

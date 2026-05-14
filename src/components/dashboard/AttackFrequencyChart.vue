@@ -38,7 +38,7 @@ const candlestickChartData = computed(() => getCandlestickChartData(filteredSeri
         <!-- FIXED: Bound value to timeRange ref -->
         <select
           v-model="timeRange"
-          class="rounded-sm border border-white/10 bg-slate-950/80 px-3 p-2 text-sm text-text-primary outline-none transition duration-200 ease-in-out focus:border-cyan-400/80 focus:ring-2 focus:ring-cyan-500/20"
+          class="rounded-sm border border-slate-200 dark:border-white/10 bg-white dark:bg-slate-950/80 px-3 p-2 text-sm text-text-primary outline-none transition duration-200 ease-in-out focus:border-cyan-400/80 focus:ring-2 focus:ring-cyan-500/20"
         >
           <option value="1h">An Hour Ago</option>
           <option value="6h">6 Hours Ago</option>
@@ -47,7 +47,7 @@ const candlestickChartData = computed(() => getCandlestickChartData(filteredSeri
       </div>
     </div>
     <div
-      class="w-full my-2 flex justify-between items-center gap-2 rounded-full border border-white/10 bg-black/40 p-1 backdrop-blur-xl"
+      class="w-full my-2 flex justify-between items-center gap-2 rounded-full border border-slate-200 bg-white/70 dark:border-white/10 dark:bg-black/40 p-1 backdrop-blur-xl"
     >
       <button
         @click="chartType = 'area'"

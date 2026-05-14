@@ -8,7 +8,7 @@ const store = useTelemetryStore()
 <template>
   <!-- HEADER -->
   <header
-    class="sticky top-0 z-100 flex w-full flex-wrap items-center justify-between gap-6 border-b border-white/5 bg-[rgba(5,8,22,0.7)] px-8 py-4 backdrop-blur-xl"
+    class="sticky top-0 z-100 flex w-full flex-wrap items-center justify-between gap-6 border-b border-[rgba(15,23,42,0.08)] dark:border-white/5 bg-(--header-bg) px-8 py-4 backdrop-blur-xl"
   >
     <div class="flex items-end justify-between gap-6">
       <div>
@@ -25,7 +25,7 @@ const store = useTelemetryStore()
         <LiveUI />
         <div
           v-if="store.threatCount"
-          class="threat glow rounded-full border border-threat/20 bg-threat/10 px-4 py-2 text-xs tracking-[0.18em] text-threat shadow-[0_0_24px_rgba(242,52,27,0.25)] backdrop-blur-xl"
+          class="dark:threat dark:glow rounded-full border border-threat/15 dark:border-threat/20 bg-threat/5 dark:bg-threat/10 px-4 py-2 text-xs tracking-[0.18em] text-threat dark:shadow-[0_0_24px_rgba(242,52,27,0.25)] backdrop-blur-xl"
         >
           THREAT DETECTED
         </div>
